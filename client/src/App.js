@@ -9,8 +9,8 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('https://pern-service.onrender.com/name', {mode:'cors'});
-        // const response = await fetch('http://localhost:5000/name', {mode:'cors'});
+        const response = await fetch('pernfront.onrender.com/name', {mode:'cors'});
+        // const response = await fetch('pernfront.onrender.com/name', {mode:'cors'});
         const data = await response.json();
         console.log({ data })
         setName(data.name);
